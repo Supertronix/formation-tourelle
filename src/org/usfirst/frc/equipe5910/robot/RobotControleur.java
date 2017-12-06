@@ -1,5 +1,7 @@
 package org.usfirst.frc.equipe5910.robot;
 
+import com.ctre.CANTalon;
+
 import edu.wpi.first.wpilibj.IterativeRobot;
 
 /**
@@ -10,7 +12,13 @@ import edu.wpi.first.wpilibj.IterativeRobot;
  * directory.
  */
 public class RobotControleur extends IterativeRobot {
+	
+	public static final int TOURELLE_PAN_MOTEUR = 2;
+	public static final int TOURELLE_TILT_MOTEUR = 5;
 
+	CANTalon tourellePan;
+	CANTalon tourelleTilt;
+	
 	/**
 	 * This function is run when the robot is first started up and should be
 	 * used for any initialization code.
@@ -19,6 +27,8 @@ public class RobotControleur extends IterativeRobot {
 	@Override
 	public void robotInit() {
 		System.out.println("robotInit()");
+		tourellePan = new CANTalon(TOURELLE_PAN_MOTEUR);
+		tourelleTilt = new CANTalon(TOURELLE_TILT_MOTEUR);
 	}
 
 	/**

@@ -6,5 +6,6 @@
 	<classpathentry kind="lib" path="lib/NetworkTables.jar"/>
 	<classpathentry kind="lib" path="lib/opencv.jar"/>
 	<classpathentry kind="lib" path="lib/WPILib.jar"/>
+	<classpathentry kind="lib" path="lib/CTRLib.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
