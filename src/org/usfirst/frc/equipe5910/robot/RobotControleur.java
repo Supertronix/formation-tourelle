@@ -1,7 +1,6 @@
 package org.usfirst.frc.equipe5910.robot;
 
 import com.ctre.CANTalon;
-
 import edu.wpi.first.wpilibj.IterativeRobot;
 
 /**
